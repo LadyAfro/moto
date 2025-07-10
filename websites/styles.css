@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  background: linear-gradient(to right, #fceabb, #E6FFF3);
+  margin: 0;
+  padding: 0;
+  font-family: 'Pacifico', cursive;
+}
+p{
+  font-size:20px;
+   margin-top: 10px;
+   text-align: center;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  animation: fadeIn 1s ease-in;
+}
+
+form {
+  background-color: white;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.8s ease-out;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+label:hover {
+  color: #6200ee;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #6200ee;
+  box-shadow: 0 0 5px rgba(98, 0, 238, 0.5);
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #6200ee;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: #3700b3;
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 600px) {
+  form {
+    padding: 10px;
+    width: 90%;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
